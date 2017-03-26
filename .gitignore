@@ -1,0 +1,6 @@
+.idea
+.vscode
+/node_modules
+/dist
+/release
+/src/js/lib

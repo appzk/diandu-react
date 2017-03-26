@@ -1,0 +1,168 @@
+.ga-container {
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+.ga-logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+  height: 90px;
+  background: url(img/global-audio.png) no-repeat;
+  background-size: 100px 90px;
+}
+
+.ga-header {
+  height: 60px;
+  line-height: 60px;
+  background: #008988;
+  font-size: 30px;
+  text-align: center;
+  color: #FFF;
+}
+
+/*内容*/
+.ga-content {
+  height: 540px;
+  background: #EFEFEF;
+  padding: 20px;
+}
+
+/*复选按钮和文字提示*/
+.ga-content-top {
+  padding: 0 10px 0 120px;
+}
+
+/*是否设置为全局音频*/
+#cbkGlobalAudio {
+  margin-right: 5px;
+}
+
+.ga-content-info {
+  height: 30px;
+  line-height: 30px;
+}
+
+.ga-content-info-time {
+  float: right;
+  border: 1px solid #E1E1E1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.ga-currentTime {
+
+}
+
+.ga-totalTime {
+  color: #A8A8A8;
+}
+
+/*进度条样式 START*/
+.ga-audio-control {
+  width: 100%;
+  height: 50px;
+  margin: 0px 0 10px 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ga-audio-control div {
+  position: absolute;
+}
+
+.ga-audio-control .ga-progressBar {
+  width: 100%;
+  height: 10px;
+  left: 0;
+  top: 20px;
+  background: #666666;
+  border-radius: 5px;
+}
+
+.ga-audio-control .ga-speed {
+  position: absolute;
+  top: 20px;
+  left: -100%;
+  width: 100%;
+  height: 10px;
+  background: #f06060;
+}
+
+.ga-audio-control .ga-drag {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  left: 0;
+  top: 10px;
+  background: #84460E;
+  color: #FFF;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*进度条样式 END*/
+
+.ga-content-pages {
+  height: 330px;
+  overflow-y: auto;
+  padding: 0 5px;
+}
+
+.ga-content-page-item {
+  width: 115px;
+  height: 100px;
+  float: left;
+  margin: 0 20px 20px 0;
+  background: #008988;
+  position: relative;
+}
+
+.ga-content-page-item:nth-child(4n+0) {
+  margin-right: 0;
+}
+
+.ga-content-page-item-index {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  top: 0;
+  left: 0;
+  border: 1px solid #A8A4A4;
+  background: #474747;
+  color: #FFF;
+  text-align: center;
+}
+
+.ga-content-page-item-time {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #6C6C6C;
+  color: #EFEFEF;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+.ga-content-page-item[disabled] .ga-content-page-item-time {
+  background: #CFCFCF;
+  color: #F0F0F0;
+}
+
+.ga-content-page-item-time:focus {
+  box-shadow: none;
+  background-color: #F2F2F2;
+  color: #000;
+}
